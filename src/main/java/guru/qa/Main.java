@@ -51,8 +51,8 @@ public class Main {
             Cat[] neighbours = new Cat[]{piu, martin, kuzya};
             lambert.addNeighbour(neighbours);
             lambert.printNeighbours();
-            lambert.printCatByNameIfPresent("Tigra");
-            lambert.printCatByNameIfPresent("Felix");
+            lambert.printCatByNameIfPresent("Martin");
+            lambert.printCatByNameIfPresent("Scotch");
 
             Cat cats = new Cat();
             cats.addCatToSet(lambert);
@@ -73,11 +73,11 @@ public class Main {
                         "Musson", true);
                 System.out.println(southKorea);
 
-                Country kazakhstan = new Country("Dmitry Glukhovsky", "Text", 20,
-                        "Fiction / Thriller / Contemporary", true);
+                Country kazakhstan = new Country("Kazakhstan", "Astana", 20,
+                        "different", true);
                 System.out.println(kazakhstan);
 
-                Country canada = new Country("anada", "Ottawa", 40,
+                Country canada = new Country("Canada", "Ottawa", 40,
                         "different", false);
                 System.out.println(canada);
 
