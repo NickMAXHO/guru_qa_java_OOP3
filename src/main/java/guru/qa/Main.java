@@ -84,7 +84,6 @@ public class Main {
 
                 Country[] previousCountries = new Country[] {kazakhstan, southKorea, canada};
                 russia.addCountry(previousCountries);
-                russia.printCountries();
                 russia.printCountryIfPresent("South Korea");
                 russia.printCountryIfPresent("Tunis");
 

@@ -35,7 +35,7 @@ public class Country {
         System.out.println("Not found");
     }
     public Country() {
-        this.countryArrayList = new ArrayList<>();
+        this.countryArrayList = new ArrayList<Country>();
     }
 
     public void addCountryToList(Country value) {
