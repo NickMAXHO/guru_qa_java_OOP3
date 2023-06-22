@@ -20,6 +20,7 @@ public class Main {
             System.out.println(rs6);
 
             Car[] otherCityCars = new Car[]{bmwZ3M, arqv};
+
             velosterN.addCar(otherCityCars);
             velosterN.printOtherCityCars();
             velosterN.printCarByBrandIfPresent("Seat");
