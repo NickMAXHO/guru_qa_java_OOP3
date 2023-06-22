@@ -26,14 +26,13 @@ public class Cat {
     }
 
     public void printNeighbours() {
-        for (int i = 0; i < neighbours.length; i++) {
-            System.out.println(neighbours[i]);
+        for (Cat neighbour : neighbours) {
+            System.out.println(neighbour);
         }
     }
 
     public void printCatByNameIfPresent(String name) {
-        for (int i = 0; i < neighbours.length; i++) {
-            Cat neighbour = neighbours[i];
+        for (Cat neighbour : neighbours) {
             if (neighbour.name.equals(name)) {
                 System.out.println(neighbour);
                 return;
@@ -43,7 +42,7 @@ public class Cat {
     }
 
     public Cat() {
-        this.catSet = new HashSet<Cat>();
+        this.catSet = new HashSet<>();
     }
 
     public void addCatToSet(Cat value) {

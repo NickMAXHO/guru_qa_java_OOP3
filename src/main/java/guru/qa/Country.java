@@ -26,8 +26,7 @@ public class Country {
     }
 
     public void printCountryIfPresent(String title) {
-        for (int i = 0; i < previousCountries.length; i++) {
-            Country previousCountry = previousCountries[i];
+        for (Country previousCountry : previousCountries) {
             if (previousCountry.country.equals(title)) {
                 System.out.println(previousCountry);
                 return;
@@ -36,7 +35,7 @@ public class Country {
         System.out.println("Not found");
     }
     public Country() {
-        this.countryArrayList = new ArrayList<Country>();
+        this.countryArrayList = new ArrayList<>();
     }
 
     public void addCountryToList(Country value) {

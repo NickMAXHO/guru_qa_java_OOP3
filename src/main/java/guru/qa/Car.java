@@ -26,14 +26,13 @@ public class Car {
     }
 
     public void printOtherCityCars(){
-        for (int i = 0; i < otherCityCars.length; i++) {
-            System.out.println(otherCityCars[i]);
+        for (Car otherCityCar : otherCityCars) {
+            System.out.println(otherCityCar);
         }
     }
 
     public void printCarByBrandIfPresent(String brand) {
-        for (int i = 0; i < otherCityCars.length; i++) {
-            Car otherCityCar = otherCityCars[i];
+        for (Car otherCityCar : otherCityCars) {
             if (otherCityCar.brand.equals(brand)) {
                 System.out.println(otherCityCar);
                 return;
@@ -43,7 +42,7 @@ public class Car {
     }
 
     public Car() {
-        this.carsList = new LinkedList<Car>();
+        this.carsList = new LinkedList<>();
     }
 
     public void addCarToQueue(Car value) {

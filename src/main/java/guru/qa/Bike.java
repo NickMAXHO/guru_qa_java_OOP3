@@ -18,6 +18,7 @@ public class Bike implements Comparable{
         this.productionYear = productionYear;
         this.isChopper = isChopper;
         this.engineVolume = engineVolume;
+        this.type = type;
     }
 
 
@@ -26,14 +27,13 @@ public class Bike implements Comparable{
     }
 
     public void printNoviceBikes() {
-        for (int i = 0; i < noviceBikes.length; i++) {
-            System.out.println(noviceBikes[i]);
+        for (Bike noviceBike : noviceBikes) {
+            System.out.println(noviceBike);
         }
     }
 
     public void printNoviceBikesByMakerIfPresent(String maker) {
-        for (int i = 0; i < noviceBikes.length; i++) {
-            Bike noviceBike = noviceBikes[i];
+        for (Bike noviceBike : noviceBikes) {
             if (noviceBike.maker.equals(maker)) {
                 System.out.println(noviceBike);
                 return;
@@ -43,7 +43,7 @@ public class Bike implements Comparable{
     }
 
     public Bike() {
-        this.noviceBikesSet = new TreeSet<Bike>();
+        this.noviceBikesSet = new TreeSet<>();
     }
 
     public void addBikeToSet(Bike value) {
